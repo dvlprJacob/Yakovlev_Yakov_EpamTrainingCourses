@@ -1,0 +1,5 @@
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Subtask2\bin\Debug\Subtask2.exe.config
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Subtask2\bin\Debug\Subtask2.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Subtask2\bin\Debug\Subtask2.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Subtask2\obj\Debug\Subtask2.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Subtask2\obj\Debug\Subtask2.pdb
