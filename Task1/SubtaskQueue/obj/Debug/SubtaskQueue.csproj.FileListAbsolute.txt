@@ -1,0 +1,5 @@
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\SubtaskQueue\bin\Debug\SubtaskQueue.exe.config
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\SubtaskQueue\bin\Debug\SubtaskQueue.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\SubtaskQueue\bin\Debug\SubtaskQueue.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\SubtaskQueue\obj\Debug\SubtaskQueue.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\SubtaskQueue\obj\Debug\SubtaskQueue.pdb

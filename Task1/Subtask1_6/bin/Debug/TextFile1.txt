@@ -1,0 +1,3 @@
+﻿Bold
+Italic
+Underline

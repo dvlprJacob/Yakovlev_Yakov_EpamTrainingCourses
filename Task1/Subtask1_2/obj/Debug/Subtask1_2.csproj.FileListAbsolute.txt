@@ -1,0 +1,11 @@
+C:\Users\dedus\Desktop\Яковлев_Яков_Task1\Task1\Subtask1_2\bin\Debug\Subtask1_2.exe.config
+C:\Users\dedus\Desktop\Яковлев_Яков_Task1\Task1\Subtask1_2\bin\Debug\Subtask1_2.exe
+C:\Users\dedus\Desktop\Яковлев_Яков_Task1\Task1\Subtask1_2\bin\Debug\Subtask1_2.pdb
+C:\Users\dedus\Desktop\Яковлев_Яков_Task1\Task1\Subtask1_2\obj\Debug\Subtask1_2.exe
+C:\Users\dedus\Desktop\Яковлев_Яков_Task1\Task1\Subtask1_2\obj\Debug\Subtask1_2.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_2\bin\Debug\Subtask1_2.exe.config
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_2\bin\Debug\Subtask1_2.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_2\bin\Debug\Subtask1_2.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_2\obj\Debug\Subtask1_2.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_2\obj\Debug\Subtask1_2.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_2\obj\Debug\Subtask1_2.csprojResolveAssemblyReference.cache

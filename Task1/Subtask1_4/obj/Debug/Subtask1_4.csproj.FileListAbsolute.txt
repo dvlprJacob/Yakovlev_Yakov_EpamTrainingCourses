@@ -1,0 +1,7 @@
+C:\Users\dedus\Desktop\Яковлев_Яков_Task1\Task1\Subtask1_4\bin\Debug\Subtask1_4.exe.config
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_4\bin\Debug\Subtask1_4.exe.config
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_4\bin\Debug\Subtask1_4.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_4\bin\Debug\Subtask1_4.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_4\obj\Debug\Subtask1_4.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_4\obj\Debug\Subtask1_4.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_4\obj\Debug\Subtask1_4.csprojResolveAssemblyReference.cache

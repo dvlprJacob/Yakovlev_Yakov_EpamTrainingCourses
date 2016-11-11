@@ -1,0 +1,5 @@
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_5\bin\Debug\Subtask1_5.exe.config
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_5\bin\Debug\Subtask1_5.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_5\bin\Debug\Subtask1_5.pdb
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_5\obj\Debug\Subtask1_5.exe
+F:\Учеба\EPAM\Яковлев_Яков_Task1\Yakovlev_Yakov_Task0\Task1\Subtask1_5\obj\Debug\Subtask1_5.pdb
