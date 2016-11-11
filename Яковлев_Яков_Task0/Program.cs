@@ -34,7 +34,7 @@ namespace Яковлев_Яков_Task1
         }
         public bool aPlace()
         {
-            if (GetX() * GetX() + GetY() * GetY() <= 1)
+            if (GetX() * GetX() + GetY() * GetY() <= 1) //todo лучше было бы написать return GetX() * GetX() + GetY() * GetY() <= 1 и обойтись одной строкой вместо 3-х
                 return true;
             return false;
         }
@@ -102,7 +102,7 @@ namespace Яковлев_Яков_Task1
                     Console.WriteLine("     Меню     \n 1 - Ввести точку.\n 2 - Выбрать область.\n 3 - Выход.");
                     Console.Write("Введите команду _ _ _ ");
                     buf = Console.ReadLine();
-                switch (buf)
+                switch (buf)//todo съехало, за этим тоже желательно следить перед заливкой в репозиторий.
                     {
                         case "1":
                         {
@@ -114,7 +114,7 @@ namespace Яковлев_Яков_Task1
                             a.y = y;
                             break;
                         }
-
+                        //todo лишний пробел
                         case "2":
                             Console.Write("Области: а , б , в , г , д , е , и , ж , з , к\nВведите область или Выход _ _ _ ");
                             string area = Console.ReadLine(); ;
@@ -122,9 +122,9 @@ namespace Яковлев_Яков_Task1
                         {
                             case "а":
                                 if (a.aPlace())
-                                    Console.WriteLine("Точка[{0};{1}] принадлежит фигуре {2} .", a.GetX(), a.GetY(), area);
+                                    Console.WriteLine("Точка[{0};{1}] принадлежит фигуре {2} .", a.GetX(), a.GetY(), area);//todo две почти одинаковые строки можно вынести в отдельную строку и заполнять в зависимости от параметра. Исправить везде в этом файле.
                                 else
-                                    Console.WriteLine("Точка[{0};{1}] не принадлежит фигуре {2} .", a.GetX(), a.GetY(), area);
+                                    Console.WriteLine("Точка[{0};{1}] не принадлежит фигуре {2} .", a.GetX(), a.GetY(), area);//todo почти одинаковая со 125й строкой. Подумать, как написать 124-127 одной строкой. Исправить везде в этом файле (где это возможно сделать).
                                 continue;
                             case "б":
                                 if (a.bPlace())
@@ -196,7 +196,7 @@ namespace Яковлев_Яков_Task1
                                                 Console.WriteLine("Точка[{0};{1}] не принадлежит фигуре {2} .", a.GetX(), a.GetY(), area);
                                             break;
                                         }
-                                        if (a.x < 0)
+                                        if (a.x < 0) //todo почему без else? после того, как проверится условие на 187 строке начнется проверка условия на 199. Излишнее поведение. Исправить везде в этом файле.
                                         {
                                             Point p1 = new Point(0, 0);
                                             Point p2 = new Point(-1, 0);
