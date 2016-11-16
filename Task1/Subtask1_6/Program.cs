@@ -11,7 +11,7 @@ namespace Subtask1_6
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)//todo не понял, каким образом можно убрать форматирование текста. Простявляет - ок, а вот с обратным действием проблемы.
         {
             Stopwatch swatch = new Stopwatch();
             swatch.Start();
