@@ -76,7 +76,7 @@ namespace Task2
             Console.WriteLine("Program initializes an array of length 10 random numbers\n__________________________\nSource array");
             for(int i=0;i<10;i++)
             {
-                Console.WriteLine("elem[{0}]={1}", i+1, Array[i]);
+                Console.WriteLine("elem[{0}]={1}", i+1, Array[i]);//todo лучше бы вывел в строку без указания индексов, так читемость кода лучше
             }
             FindMax(Array);
             FindMin(Array);

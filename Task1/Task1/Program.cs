@@ -36,7 +36,7 @@ namespace Task1
                     catch (FormatException)
                     {
                         Console.Write("Wrong Input !\nRepeat.");
-                        goto Menu;
+                        goto Menu;//todo нужно стараться не использовать этот оператор. С ним стройность логики программы сильно усложняется.
                     }
                     try
                     {
