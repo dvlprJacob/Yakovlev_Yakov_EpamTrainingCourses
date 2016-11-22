@@ -8,7 +8,7 @@ namespace Subtask4_2
 {
     public class Triangle
     {
-        int side1, side2, side3;
+        int side1, side2, side3;//todo с полями разрешается работать только в соответствующих свойствах
         public Triangle()
         {
             side1 = 0;
@@ -90,7 +90,7 @@ namespace Subtask4_2
         }
         public void Write()
         {
-            Console.WriteLine(this.ToString());
+            Console.WriteLine(this.ToString());//todo this лишнее, из метода класса доступны все методы данного класса
             return;
         }
     }

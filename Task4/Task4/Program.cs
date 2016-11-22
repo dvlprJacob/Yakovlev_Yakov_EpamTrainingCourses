@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Task4
 {
-    public class Round
+    public class Round//todo классы принято выносить в отдельные файлы
     {
-        int x;
-        int y;
+        int x; //todo для этого поля у тебя не предусмотрено никаких проверок, соответственно его можно заменить на свойство
+        int y;//todo для этого поля у тебя не предусмотрено никаких проверок, соответственно его можно заменить на свойство
         int R;
         public Round()
         {
@@ -40,7 +40,7 @@ namespace Task4
                     R = value;
             }
         }
-        public int X
+        public int X //todo сократить запись этого свойства до get; set;
         {
             get
             {
@@ -51,7 +51,7 @@ namespace Task4
                 x = value;
             }
         }
-        public int Y
+        public int Y//todo сократить запись этого свойства до get; set;
         {
             get
             {
@@ -82,7 +82,7 @@ namespace Task4
                 return 2 * Math.PI * R;
             }
         }
-        public string ToString()
+        public override string ToString() //todo ты просто скрыл базовую реализацию метода, лучше писать через override (по методологии ООП)
         {
             return "Round with center in (" + x.ToString() + ";" + y.ToString() + ")  and radius equall " + R.ToString();
         }

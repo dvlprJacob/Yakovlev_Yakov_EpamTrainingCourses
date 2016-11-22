@@ -28,21 +28,21 @@ namespace Subtask4_3
         {
             this.FName = FName;
             this.SName = SName;
-            this.BDay = new DateTime(Year, 1, 1);
+            this.BDay = new DateTime(Year, 9, 8);//todo а входным DateTime передать не вариант?
         }
         public int Years
         {
             get
             {
                 if (BDay != null)
-                    return DateTime.Today.Year - BDay.Year;
+                    return DateTime.Today.Year - BDay.Year;//todo неправильная реализация (если сейчас бы был 01.01.2017, а ты родился бы 02.01.2017, то твой возраст бы посчитал на год больше)
                 return -1;
             }
         }
         public string ToString()
         {
             if(BDay!=null)
-                return "First name is " + FName.ToString() + "\nSecond name is " + SName.ToString() + "\nBirth dite is " + BDay.ToString() + "\nYears is "+Years;
+                return "First name is " + FName.ToString() + "\nSecond name is " + SName.ToString() + "\nBirth dite is " + BDay.ToString() + "\nYears is "+Years; //todo string.Format
             return null;
         }
         public void Write()
@@ -62,7 +62,7 @@ namespace Subtask4_3
             Random r = new Random();
             for(int i=0;i<3;i++)
             {
-                Arr[i] = new User("FName" + i.ToString(), "SName" + i.ToString(), r.Next(1950,1996));
+                Arr[i] = new User("FName" + i.ToString(), "SName" + i.ToString(), 1992);
             }
             foreach(User s in Arr)
             {

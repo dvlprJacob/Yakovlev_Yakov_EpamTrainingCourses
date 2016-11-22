@@ -23,7 +23,7 @@ namespace Subtask4_4
                 this.SetSymbol(i, s[i]);
             }
         }
-        public MyString(MyString s1, MyString s2)
+        public MyString(MyString s1, MyString s2)//todo не понял для чего такое нужно делать в конструкторе, почему не в отдельном методе?
         {
             this.Count = s1.Count + s2.Count;
             this.Symbols = new char[this.Count];
@@ -38,7 +38,7 @@ namespace Subtask4_4
                 j++;
             }
         }
-        public MyString(MyString s1)
+        public MyString(MyString s1)//todo аналогично. Конструкторы нужны для инициализации полей текущего класса. 
         {
             this.Count = s1.Count;
             this.Symbols = new char[this.Count];
