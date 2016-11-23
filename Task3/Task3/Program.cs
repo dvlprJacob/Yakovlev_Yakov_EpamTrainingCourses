@@ -13,7 +13,7 @@ namespace Task3
             Console.WriteLine("The program determines the average length of a word in the text.\nInput the text.");
             string str;
             str=Console.ReadLine();
-            string[] words = str.Split(new[] { ' ', '!', '?', ':', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] words = str.Split(new[] { ' ', '!', '?', ':', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);//todo не пойдет, используй методы класса Char (IsDigit, IsLetter итп)
             int SumOfLength = 0;
             foreach(string s in words)
             {
