@@ -23,7 +23,6 @@ namespace Subtask4_4
                 this.SetSymbol(i, s[i]);
             }
         }
-        //Этот конструктор мне нужен для перегрузки оператора +
         public MyString(MyString s1, MyString s2)
         {
             this.Count = s1.Count + s2.Count;
@@ -37,6 +36,15 @@ namespace Subtask4_4
             {
                 this.SetSymbol(i, s2.Symbols[j]);
                 j++;
+            }
+        }
+        public MyString(MyString s1)
+        {
+            this.Count = s1.Count;
+            this.Symbols = new char[this.Count];
+            for (int i = 0; i < s1.Count; i++)
+            {
+                this.SetSymbol(i, s1.Symbols[i]);
             }
         }
         public MyString(string str)
@@ -73,6 +81,12 @@ namespace Subtask4_4
                 return true;
             return false;
         }
+        public void Write()
+        {
+            if (Count > 0)
+                Console.WriteLine(this.Symbols);
+        }
+
         public static MyString operator + (MyString str1, MyString str2)
         {
             return new MyString(str1,str2);
@@ -103,11 +117,8 @@ namespace Subtask4_4
         {
             return new MyString(obj);
         }
-        public void Write()
-        {
-            Console.WriteLine(Symbols);
-        }
     }
+
     class Program
     {
         static void Main(string[] args)
