@@ -11,23 +11,23 @@ namespace Subtask4_2
         int side1, side2, side3;
         public Triangle()
         {
-            side1 = 0;
-            side2 = 0;
-            side3 = 0;
+            a = 0;
+            b = 0;
+            c = 0;
         }
         public Triangle(int a, int b, int c)
         {
             if (a+b>c && a+c>b && b+c>a)
             {
-                this.side1 = a;
-                this.side2 = b;
-                this.side3 = c;
+                this.a = a;
+                this.b = b;
+                this.c = c;
             }
             else
             {
-                side1 = 0;
-                side2 = 0;
-                side3 = 0;
+                this.a = 0;
+                this.b = 0;
+                this.c = 0;
             }
         }
         public int a
@@ -84,14 +84,9 @@ namespace Subtask4_2
                 return 0;
             }
         }
-        public string ToString()
+        public override string ToString()
         {
-            return "Triangle with sides a=" + a.ToString() + ", b=" + b.ToString() + ", c=" + c.ToString() + ".";
-        }
-        public void Write()
-        {
-            Console.WriteLine(this.ToString());
-            return;
+            return string.Format("Triangle with sides a= {0}, b= {1}, c= {2}.",a,b,c);
         }
     }
     class Program
@@ -100,7 +95,6 @@ namespace Subtask4_2
         {
             Triangle T = new Triangle(3,3,1);
             Console.WriteLine(T);
-            T.Write();
             Console.WriteLine("Area equall {0}\nPerimetr equall {1}\nPress any key for ap clossing . . . ", T.Area, T.Perimetr);
             Console.ReadKey();
             return;
