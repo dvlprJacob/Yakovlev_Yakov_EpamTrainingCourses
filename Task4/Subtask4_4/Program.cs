@@ -24,7 +24,7 @@ namespace Subtask4_4
             }
         }
         //Этот конструктор мне нужен для перегрузки оператора +
-        public MyString(MyString s1, MyString s2)
+        public MyString(MyString s1, MyString s2)//todo так никто не пишет. Логика очень странная получается: для инициализации экземпляра класса MyString ты передаешь ему в качестве входных параметров два других экземпляра класса MyString. Т.е. у тебя всегда должен быть экземпляр класса MyString, а это уже надежда на то, что пользователь будет правильно пользоваться твоим классом.
         {
             this.Count = s1.Count + s2.Count;
             this.Symbols = new char[this.Count];
@@ -75,7 +75,7 @@ namespace Subtask4_4
         }
         public static MyString operator + (MyString str1, MyString str2)
         {
-            return new MyString(str1,str2);
+            return new MyString(str1,str2);//todo вынеси просто в какой нибудь метод (не в конструктор), который возвращает MyString
         }
         public static bool operator ==(MyString str1,MyString str2)
         {
