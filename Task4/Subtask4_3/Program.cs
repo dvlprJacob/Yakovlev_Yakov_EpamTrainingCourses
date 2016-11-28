@@ -33,11 +33,11 @@ namespace Subtask4_3
         {
             get
             {
-                if (BDay != null)
+                if (BDay != null)//todo это условие всегда true, потому что DateTime - не ссылочного типа и не может принимать значение null
                 {
                     return new DateTime(BDay.Year, BDay.Month, BDay.Day);
                 }
-                throw new Exception("У пользователя не инициализирован день рождения");
+                throw new Exception("У пользователя не инициализирован день рождения");//todo не должен приводить к исплючительной ситуации (см. лекцию)
             }
         }
         public override string ToString()
