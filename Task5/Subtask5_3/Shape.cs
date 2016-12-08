@@ -9,7 +9,7 @@ namespace Subtask5_3
     public class Shape
     {
         protected string Name { set; get; }
-        public override int GetHashCode()
+        public override int GetHashCode()//todo зачем?
         {
             return Name.GetHashCode();
         }

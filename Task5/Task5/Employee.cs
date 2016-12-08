@@ -32,7 +32,7 @@ namespace Task5
             BDay = new DateTime();
             DateOfEmplt = new DateTime();
         }
-        /// <summary>
+        /// <summary>//todo какой смысл писать пустые комментарии?
         /// 
         /// </summary>
         /// <param name="User"></param>
@@ -43,7 +43,7 @@ namespace Task5
             if(User!=null)
             {
                 this.Post = Post;
-                this.DateOfEmplt = DateOfEmplt;
+                this.DateOfEmplt = DateOfEmplt;//todo возможна ситуация, когда день рождения пользователя позже его даты начала работы
                 this.FName = User.FirstName;
                 this.SName = User.SecondName;
                 this.BDay = User.BirthDay;
