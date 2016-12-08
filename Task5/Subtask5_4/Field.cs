@@ -39,7 +39,7 @@ namespace Subtask5_4
         Monster[] monster;
         public bool Win()
         {
-            if (player.X == FinishX && player.Y == FinishY)
+            if (player.X == FinishX && player.Y == FinishY)//todo придирка, не обращать внимания: "Цель игры – собрать все бонусы и не быть «съеденным» монстрами.", а у тебя выигрыш - просто дойти до угла поля.
                 return true;
             return false;
         }

@@ -9,7 +9,7 @@ namespace Subtask6_3
 {
     public class DinamicArray : IEnumerable<int>,IEnumerator
     {
-        public Dictionary<DateTime, Exception> Exception;
+        public Dictionary<DateTime, Exception> Exception;//todo "коллекции .NET не использовать"
         int[] DinArray;
         int Count;
         int Position = -1;
@@ -133,7 +133,7 @@ namespace Subtask6_3
                 Count++;
                 return;
             }
-            List<int> buf = new List<int>(DinArray);
+            List<int> buf = new List<int>(DinArray);//todo "коллекции .NET не использовать"
             DinArray = new int[Capacity * 2];
             Count++;
             for (int i = 0; i < Count; i++)
@@ -144,11 +144,11 @@ namespace Subtask6_3
         }
         public void AddRange(IEnumerable<int> Collection)
         {
-            if (!Collection.Equals(null))
+            if (!Collection.Equals(null))//todo !=
             {
-                if (Capacity - Count < Collection.Count())
+                if (Capacity - Count < Collection.Count())//todo в противном случае забиваем на добавление? вообще не понял смысла этого условия
                 {
-                    List<int> buf = new List<int>(DinArray);
+                    List<int> buf = new List<int>(DinArray);//todo "коллекции .NET не использовать"
                     int CountAfter = Count;
                     DinArray = new int[(Capacity + Collection.Count()) * 2];
                     Count = Count + Collection.Count(); ;
@@ -189,7 +189,7 @@ namespace Subtask6_3
                 }
                 if (ind!=-1)
                 {
-                    List<int> buf = new List<int>(DinArray);
+                    List<int> buf = new List<int>(DinArray);//todo "коллекции .NET не использовать"
                     DinArray = new int[Capacity];
                     Count = Count - 1;
                     for (int i = 0; i < ind; i++)
@@ -225,7 +225,7 @@ namespace Subtask6_3
                 return false;
             }
             Count++;
-            List<int> buf = new List<int>(DinArray);
+            List<int> buf = new List<int>(DinArray);//todo "коллекции .NET не использовать"
             DinArray = new int[Capacity];
             for (int i = 0; i < ind; i++)
                 DinArray[i] = buf[i];

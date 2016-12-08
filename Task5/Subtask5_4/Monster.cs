@@ -42,7 +42,7 @@ namespace Subtask5_4
             }
             return false;
         }
-        public int X
+        public int X//todo для игрока и монстра у тебя повторяются поля координат, значит, есть смысл выносить их в базовый класс для этих классов
         {
             get
             {
@@ -68,9 +68,9 @@ namespace Subtask5_4
 
             }
         }
-        public override int GetHashCode()
+        public override int GetHashCode()//todo почему тогда ты не переопределил Equals? 
         {
-            return Name.GetHashCode();
+            return Name.GetHashCode();//todo не очень хорошая реализация своего хэш-кода через стандартный
         }
     }
 }
