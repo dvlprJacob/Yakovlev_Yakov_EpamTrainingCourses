@@ -8,7 +8,8 @@ namespace Subtask5_4
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)//todo не реализованы дополнительные условия, оговоренные в общем чате скайпа.
+                                       //todo где препятствия?
 
         {
 

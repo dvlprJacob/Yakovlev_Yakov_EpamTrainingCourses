@@ -31,7 +31,7 @@ namespace Subtask7_2
             ComingTime = _ComeTime;
         }
     }
-    public class Person
+    public class Person// todo каждый класс в отдельный файл!
     {
         public string Name { set; get; }
         public Person(string name)

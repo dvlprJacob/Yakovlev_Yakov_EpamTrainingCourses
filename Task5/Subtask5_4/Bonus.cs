@@ -40,7 +40,7 @@ namespace Subtask5_4
             return false;
         }
         public Bonus() { }
-        public int X
+        public int X//todo см. предыдущие комментарии!
         {
             get
             {

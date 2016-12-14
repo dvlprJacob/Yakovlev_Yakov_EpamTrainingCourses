@@ -44,13 +44,13 @@ namespace Task5
                 return this.SName;
             }
         }
-        public DateTime Years
+        public DateTime Years//todo возраст должен быть целочисленным
         {
             get
             {
                 if (BDay != null)
                 {
-                    return new DateTime(DateTime.Today.Year-BDay.Year, Math.Abs(DateTime.Today.Month-BDay.Month), Math.Abs(DateTime.Today.Day-BDay.Day));
+                    return new DateTime(DateTime.Today.Year-BDay.Year, Math.Abs(DateTime.Today.Month-BDay.Month), Math.Abs(DateTime.Today.Day-BDay.Day));//todo неоптимальное решение, ты по нескольку раз вызываешь метод Today у DateTime
                 }
                 throw new Exception("У пользователя не инициализирован день рождения");
             }

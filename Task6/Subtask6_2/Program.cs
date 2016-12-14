@@ -13,7 +13,7 @@ namespace Subtask6_2
             Console.WriteLine("Введите текст на английском.");
             string Text = Console.ReadLine();
             
-            List<string> words = new List<string>(Text.Split(new char[] { ' ', '.' }, StringSplitOptions.RemoveEmptyEntries));
+            List<string> words = new List<string>(Text.Split(new char[] { ' ', '.' }, StringSplitOptions.RemoveEmptyEntries));//todo опять хардкод разделителей (Char.IsSeparator)
             List<KeyValuePair<int, string>> Words = new List<KeyValuePair<int, string>>();
             for (int i=0;i<words.Count;i++)
             {

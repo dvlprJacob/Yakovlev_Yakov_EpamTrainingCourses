@@ -8,10 +8,10 @@ namespace Task6
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)//todo "каждый второй человек" != "второй человек". На первый-второй рассчитайтесь...
         {
             Console.WriteLine("Введите количество человек в круге.");
-            int N = int.Parse(Console.ReadLine());
+            int N = int.Parse(Console.ReadLine());//todo необработанное исключение, если я введу не число
             Queue<int> Circle = new Queue<int>();
             for (int i = 0; i < N; i++)
                 Circle.Enqueue(i + 1);
