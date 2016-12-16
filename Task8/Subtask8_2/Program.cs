@@ -11,9 +11,9 @@ namespace Subtask8_2
         public static bool IsPositiveInteger(this string _string)
         {
             int i = 0;
-            if (_string[i] != '0' && _string[i]!='-' && !char.IsLetter(_string[i]))
+            if (_string[i] != '0' && _string[i]!='-' && !char.IsLetter(_string[i]))//todo а если у тебя на вход придет строка " -2"? Условие лишнее.
             {
-                while (i < _string.Count())
+                while (i < _string.Count())//todo скобки не нужны. Count - это свойство.
                 {
                     if (!char.IsNumber(_string[i]))
                         return false;

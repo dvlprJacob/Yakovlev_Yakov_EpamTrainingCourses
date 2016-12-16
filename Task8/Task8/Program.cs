@@ -8,7 +8,7 @@ namespace Task8
 {
     static class Program
     {
-        public static int GetSumOfElems(this IEnumerable<int> _collection)
+        public static int GetSumOfElems(this IEnumerable<int> _collection)//todo мы же говорили о обобщениях. Переписать методы GetSumOfElems одним методом.
         {
             if(!_collection.Equals(null))
             {

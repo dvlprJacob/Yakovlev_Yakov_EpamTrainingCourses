@@ -9,10 +9,10 @@ using System.Diagnostics;
 /// </summary>
 namespace Subtask8_3
 {
-    internal static class Program
+    internal static class Program//todo + в карму за креативность задачки
     {
         //Delegate for subtask2
-        public delegate int Method(int[] _array,int value);
+        public delegate int Method(int[] _array,int value);//todo три одинаковых сигнатуры? Можно было и одним методом обойтись.
         //Delegate for subtask3
         public delegate int AnonymousMethod(int[] _array, int value);
         //Delegate for subtask4
@@ -24,7 +24,7 @@ namespace Subtask8_3
         /// <returns></returns>
         public static int GetIndexOfElement(int[] _array, int value)
         {
-            if (!_array.Equals(null))
+            if (!_array.Equals(null)) //todo обычно пишут _array != null
             {
                 for (int i = 0; i < _array.Count(); i++)
                 {
@@ -69,9 +69,9 @@ namespace Subtask8_3
             for (int i=0;i<40;i++)
             {
                 RunTime.Restart();
-                //Я так понял, что инициализацию делегата нужно писать после начала отсчета времени.
-                Method IsIn = new Subtask8_3.Program.Method(GetIndexOfElement);
-                rezult = IsIn.Invoke(_array, value);
+                //Я так понял, что инициализацию делегата нужно писать после начала отсчета времени.//todo смотря что именно ты хочешь сосчитать. Если время выполнения кода тела делегата, то нет.
+                Method IsIn = new Subtask8_3.Program.Method(GetIndexOfElement);//todo new Subtask8_3.Program.Method - лишнее
+                rezult = IsIn.Invoke(_array, value);//todo IsIn(_array, value) проще для чтения
                 ArrayForMedian.Add(RunTime.Elapsed.TotalMilliseconds);
             }
 
@@ -177,7 +177,7 @@ namespace Subtask8_3
             var indexes = buf.Select((item, index) => new { Item = item, Index = index }).Where(n => n.Item == value).Select(n => n.Index);
             for (int i = 0; i < 40; i++)
             {
-                foreach (int item in indexes)
+                foreach (int item in indexes)//todo не понял
                 { }
                 ArrayForMedian.Add(RunTime.Elapsed.TotalMilliseconds);
                 RunTime.Restart();
@@ -222,13 +222,13 @@ namespace Subtask8_3
                 Subtask5(_array, value);
 
                 Console.ReadKey();
-                return;
+                return;//todo для чего?
             }
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
                 Console.ReadLine();
-                return;
+                return;//todo для чего?
             }
         }
     }
